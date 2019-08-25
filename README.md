@@ -1,8 +1,8 @@
-#peerjs-sample
+# peerjs-sample
 
 ---
 
-###本机启用/调试方法
+### 本机启用/调试方法
 
 node server.js
 
