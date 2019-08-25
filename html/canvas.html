@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>peerjs-canvas</title>
+    <script src="lib/peer.min.js"></script>
+    <script src="lib/adapter-latest.js"></script>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="txtSelfId">my name:</label>
+                <input type="text" id="txtSelfId" class="w120" />
+                <button id="btnRegister">register</button>
+            </td>
+            <td align="right">
+                <label for="txtTargetId">target name:</label>
+                <input type="text" id="txtTargetId" class="w120" />
+                <button id="btnShare">share</button>
+            </td>
+        </tr>       
+        <tr>
+            <td colspan="2">
+                <div id="container">
+                    <canvas id="demoCanvas" width="600" height="240">
+                    </canvas>
+                </div>      
+            </td>                        
+        </tr>       
+    </table>
+     
+    <script src="js/canvas.js"></script>
+
+</body>
+
+</html>

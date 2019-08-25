@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>peerjs-chat</title>
+    <script src="lib/peer.min.js"></script>
+    <script src="lib/adapter-latest.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="txtSelfId">my name:</label>
+                <input type="text" id="txtSelfId" class="w60" />
+                <button id="btnRegister">register</button>
+            </td>
+            <td align="right">
+                <label for="txtTargetId">target name:</label>
+                <input type="text" id="txtTargetId" class="w60" />
+                <label for="txtMsg">message:</label>
+                <input type="text" id="txtMsg" class="w120" />
+                <button id="btnSend">send</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="chatMessageBox" id="tdBox">               
+            </td>
+        </tr>
+    </table>
+    <script src="js/chat.js"></script>
+
+</body>
+
+</html>

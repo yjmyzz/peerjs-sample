@@ -1,0 +1,39 @@
+.w60 {
+    width: 60px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.align_right {
+    text-align: right;
+    background-color: beige;
+    line-height: 150%;
+    padding: 3px
+}
+
+.align_left {
+    text-align: left;
+    line-height: 150%;
+    padding: 3px
+}
+
+.chatMessageBox {
+    height: 200px;
+    overflow-y: scroll;
+    vertical-align: top
+}
+
+video{
+    width:320px;
+    height:240px
+}
+
+#container {
+    position: relative;
+}
+
+#demoCanvas {
+    border: 1px solid #000;
+}

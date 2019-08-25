@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>peerjs-video call</title>
+    <script src="lib/peer.min.js"></script>
+    <script src="lib/adapter-latest.js"></script>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="txtSelfId">my name:</label>
+                <input type="text" id="txtSelfId" class="w120" />
+                <button id="btnRegister">register</button>
+            </td>
+            <td align="right">
+                <label for="txtTargetId">target name:</label>
+                <input type="text" id="txtTargetId" class="w120" />
+                <button id="btnCall">call</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <select id="videoSelect" style="width:100%"></select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <video id="localVideo" autoplay controls></video>
+            </td>
+            <td>
+                <video id="remoteVideo" autoplay controls></video>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">local video</td>
+            <td align="center">remote video</td>
+        </tr>
+    </table>
+
+    <div id="dialog-confirm" title="accept video call?">
+        <p><span class="ui-icon ui-icon-info" style="float:left; margin:12px 12px 20px 0;"></span><label id="lblFrom"></label> is calling you, do you accept?</p>
+    </div>
+
+    <script src="js/videocall.js"></script>
+
+</body>
+
+</html>

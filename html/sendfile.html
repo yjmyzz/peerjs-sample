@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>peerjs-send file</title>
+    <script src="lib/peer.min.js"></script>
+    <script src="lib/adapter-latest.js"></script>
+    <script src="lib/jquery-1.12.4.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="txtSelfId">my name:</label>
+                <input type="text" id="txtSelfId" class="w60" />
+                <button id="btnRegister">register</button>
+                <label id="status"></label>
+                <label for="txtTargetId">target name:</label>
+                <input type="text" id="txtTargetId" class="w60" />
+                <input type="file" accept="image/*" id="inputFile" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><label id="lblStatus" style="color:#666">ready</label></td>
+        </tr>
+        <tr>           
+            <td>
+                <img id="demoImage" style="width:124px;border:1px solid #efefef"></img>
+            </td>
+        </tr>        
+    </table>
+    <script src="js/sendfile.js"></script>
+</body>
+
+</html>
