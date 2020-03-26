@@ -100,7 +100,7 @@
     "methods": "^1.1.2",
     "mime-db": "^1.40.0",
     "mime-types": "^2.1.24",
-    "minimist": "^0.0.10",
+    "minimist": "^1.2.5",
     "ms": "^2.1.1",
     "negotiator": "^0.6.2",
     "object-assign": "^4.1.1",
