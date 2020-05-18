@@ -3,3 +3,6 @@ tasks:
     command: npm run start
 image:
   file: .gitpod.Dockerfile
+ports:
+  - port: 8080
+    onOpen: open-preview
